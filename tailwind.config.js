@@ -1,15 +1,22 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
+      fontFamily: {
+        krona: ["Krona One", "sans-serif"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        dark: "#0c0808",
+        green: "#1E3329",
+        pink: "#fed2d1",
+        yellow: "#FFc94b",
+        "light-grey": "#ECECEC",
+        "dark-grey": "#B8B8B8",
+        light: "#FAFAFA",
       },
     },
   },
