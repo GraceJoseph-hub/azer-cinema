@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       fontFamily: {
         krona: ["Krona One", "sans-serif"],
+        sunflower: ['Sunflower', 'sans-serif'],
+        poppins: ["Poppins", "sans-serif"]
       },
       colors: {
         dark: "#0c0808",
