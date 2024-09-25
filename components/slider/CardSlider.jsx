@@ -6,8 +6,8 @@ import { Pagination, Autoplay, EffectFade } from "swiper/modules";
 
 const CardSlider = () => {
   return (
-    <main>
-      <div className="container">
+    <main className="">
+      <div className="h-screen w-full">
         <Swiper
           modules={[Pagination, Autoplay, EffectFade]}
           effect="fade"
