@@ -44,11 +44,11 @@ const CardSlider = () => {
                 <h2>The Bear</h2>
                 <p>
                   A drama series that dives into the world of a Chicago
-                  restaurant. It follows a young chef, Carmen 'Carmy' Berzatto,
-                  who returns home to run his family's sandwich shop after the
-                  death of his brother. The show explores the pleasures of the
-                  culinary world, family bonds and the challenges of remaining
-                  in a business.
+                  restaurant. It follows a young chef, Carmen &apos;Carmy&apos;
+                  Berzatto, who returns home to run his family&apos;s sandwich
+                  shop after the death of his brother. The show explores the
+                  pleasures of the culinary world, family bonds and the
+                  challenges of remaining in a business.
                 </p>
               </div>
               <div className="genre">
