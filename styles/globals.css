@@ -71,23 +71,23 @@ main{
 
 .slide-1{
   background: url("../public/img/img1.jpg") no-repeat center / cover;
-  opacity: 0;
+  opacity: 0.5;
 }
 .slide-2{
   background: url("../public/img/img2.jpg") no-repeat center / cover;
-  opacity: 0;
+  opacity: 0.5;
 }
 .slide-3{
   background: url("../public/img/img3.jpg") no-repeat center / cover;
-  opacity: 0;
+  opacity: 0.5;
 }
 .slide-4{
   background: url("../public/img/img4.jpg") no-repeat center / cover;
-  opacity: 0;
+  opacity: 0.5;
 }
 .slide-5{
   background: url("../public/img/img5.jpg") no-repeat center / cover;
-  opacity: 0;
+  opacity: 0.5;
 }
 
 .title{
