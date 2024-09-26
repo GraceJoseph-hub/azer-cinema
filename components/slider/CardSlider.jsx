@@ -1,8 +1,10 @@
+import cardData from "./cardData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Pagination, Autoplay, EffectFade } from "swiper/modules";
+import Image from "next/image";
 
 const CardSlider = () => {
   return (
@@ -15,14 +17,10 @@ const CardSlider = () => {
             delay: 4000,
             disableOnInteraction: false,
           }}
-          // loop={true}
           grabCursor={true}
-          // initialSlide={2}
-          // centeredSlides={true}
           slidesPerView="auto"
           speed={1000}
           slideToClickedSlide={true}
-          // pagination={{ clickable: true }}
           pagination={{ el: ".swiper-pagination", clickable: true }}
           fadeEffect={{ crossFade: true }}
           breakpoints={{
@@ -31,128 +29,38 @@ const CardSlider = () => {
             580: { spaceBetween: 70 },
             650: { spaceBetween: 30 },
           }}
-          className="swiper-container"
+          className="h-full w-full"
         >
-          {/* first slide */}
-          <SwiperSlide className="swiper-slide slide-1">
-            <div className="title">
-              <h1>The Bear</h1>
-            </div>
-            <div className="content">
-              <div className="score">8.6</div>
-              <div className="text">
-                <h2>The Bear</h2>
-                <p>
-                  A drama series that dives into the world of a Chicago
-                  restaurant. It follows a young chef, Carmen &apos;Carmy&apos;
-                  Berzatto, who returns home to run his family&apos;s sandwich
-                  shop after the death of his brother. The show explores the
-                  pleasures of the culinary world, family bonds and the
-                  challenges of remaining in a business.
-                </p>
+          {cardData.map((movie, index) => (
+            <SwiperSlide
+              className="swiper-slide relative w-full shadow-[1px_22px_44px_rgba(0,0,0,0.2)] transition duration-[2000ms] select-none"
+              key={index}
+            >
+              <Image
+                src={movie.img}
+                alt={`movie ${index + 1}`}
+                className="w-full h-full object-cover bg-center"
+              />
+              <div className="title flex flex-col justify-end h-[100%] pt-6 px-6 pb-7">
+                <h1 className="font-sunflower text-[#fff] text-[2.5rem] font-bold opacity-100">
+                  {movie.title}
+                </h1>
               </div>
-              <div className="genre">
-                <span style={{ "--1": 1 }}>Drama</span>
-                <span style={{ "--1": 2 }}>Comedy</span>
+              <div className="content absolute inset-0 w-full h-full p-[25px] pb-[65px] flex flex-col justify-end bg-black/50 bg-gradient-to-b from-transparent via-transparent to-black/80 text-white opacity-0">
+                <div className="score absolute top-[12px] right-[12px] w-[45px] aspect-[1/1] flex items-center justify-center text-black bg-[#ffe550] rounded-full shadow-[0_50px_50px_-20px_rgba(50,50,93,0.25),0_30px_60px_-30px_rgba(0,0,0,0.3),inset_0_-2px_6px_0_rgba(10,37,64,0.35)]">
+                  {movie.badge}
+                </div>
+                <div className="text">
+                  <h2>{movie.subTitle}</h2>
+                  <p>{movie.text}</p>
+                </div>
+                <div className="genre">
+                  <span style={{ "--1": 1 }}>{movie.genres[0]}</span>
+                  <span style={{ "--1": 2 }}>{movie.genres[1]}</span>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-
-          {/* second slide */}
-          <SwiperSlide className="swiper-slide slide-2">
-            <div className="title">
-              <h1>Wednesday</h1>
-            </div>
-            <div className="content">
-              <div className="score">8.6</div>
-              <div className="text">
-                <h2>Wednesday</h2>
-                <p>
-                  A supernatural series centered around Wednesday Addams from
-                  the Addams teenager attending Nevermore Academy, where she
-                  hones her physic abilities navigates her relationship with her
-                  peculiar family and new friends.
-                </p>
-              </div>
-              <div className="genre">
-                <span style={{ "--1": 1 }}>Supernatural</span>
-                <span style={{ "--1": 2 }}>Comedy</span>
-                <span style={{ "--1": 3 }}>Mystery</span>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          {/* third slide */}
-          <SwiperSlide className="swiper-slide slide-3">
-            <div className="title">
-              <h1>Severance</h1>
-            </div>
-            <div className="content">
-              <div className="score">8.6</div>
-              <div className="text">
-                <h2>Severance</h2>
-                <p>
-                  A psychological thriller about employees at lumon Inc where
-                  workers undergo a procedure to separate their memories from
-                  their personal lives. The series follows who begins to uncover
-                  the dark truth behind this process, blurring the line between
-                  work and personal
-                </p>
-              </div>
-              <div className="genre">
-                <span style={{ "--1": 1 }}>Psychological thriller</span>
-                <span style={{ "--1": 2 }}>Science fiction</span>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          {/* fourth slide */}
-          <SwiperSlide className="swiper-slide slide-4">
-            <div className="title">
-              <h1>Game of thrones</h1>
-            </div>
-            <div className="content">
-              <div className="score">9.6</div>
-              <div className="text">
-                <h2>Game of thrones</h2>
-                <p>
-                  A psychological thriller about employees at lumon Inc where
-                  workers undergo a procedure to separate their memories from
-                  their personal lives. The series follows who begins to uncover
-                  the dark truth behind this process, blurring the line between
-                  work and personal
-                </p>
-              </div>
-              <div className="genre">
-                <span style={{ "--1": 1 }}>Fantancy</span>
-                <span style={{ "--1": 2 }}>Drama</span>
-                <span style={{ "--1": 3 }}>Adventure</span>
-              </div>
-            </div>
-          </SwiperSlide>
-          {/* fifth slide */}
-          <SwiperSlide className="swiper-slide slide-5">
-            <div className="title">
-              <h1>Succession</h1>
-            </div>
-            <div className="content">
-              <div className="score">9.6</div>
-              <div className="text">
-                <h2>Succession</h2>
-                <p>
-                  A psychological thriller about employees at lumon Inc where
-                  workers undergo a procedure to separate their memories from
-                  their personal lives. The series follows who begins to uncover
-                  the dark truth behind this process, blurring the line between
-                  work and personal
-                </p>
-              </div>
-              <div className="genre">
-                <span style={{ "--1": 1 }}>Drama</span>
-                <span style={{ "--1": 2 }}>Satire</span>
-              </div>
-            </div>
-          </SwiperSlide>
+            </SwiperSlide>
+          ))}
           <div className="swiper-pagination"></div>
         </Swiper>
       </div>
