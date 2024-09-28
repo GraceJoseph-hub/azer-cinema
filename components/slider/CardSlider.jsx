@@ -38,7 +38,7 @@ const CardSlider = () => {
             >
               <Image
                 src={movie.img}
-                alt={`movie ${index + 1}`}
+                alt={index}
                 className="w-full h-full object-cover bg-center"
               />
               <div className="title flex flex-col justify-end h-[100%] pt-6 px-6 pb-7">

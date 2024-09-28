@@ -48,6 +48,7 @@ main{
   opacity: 0;
   transition: 0.8s;
   transition-delay: 1.5s;
+  color: #ba10ba
 }
 
 /* .content{
