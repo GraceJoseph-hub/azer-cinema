@@ -1,9 +1,8 @@
-import React from 'react'
+import Layout from "@/components/layout/Layout";
+import React from "react";
 
 const FoodDrinks = () => {
-  return (
-    <div>FoodDrinks</div>
-  )
-}
+  return <Layout>FoodDrinks</Layout>;
+};
 
-export default FoodDrinks
+export default FoodDrinks;

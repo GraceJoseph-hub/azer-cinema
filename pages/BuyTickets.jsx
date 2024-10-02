@@ -1,9 +1,8 @@
-import React from 'react'
+import Layout from "@/components/layout/Layout";
+import React from "react";
 
 const BuyTickets = () => {
-  return (
-    <div>BuyTickets</div>
-  )
-}
+  return <Layout>BuyTickets</Layout>;
+};
 
-export default BuyTickets
+export default BuyTickets;

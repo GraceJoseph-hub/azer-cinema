@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
-import MovieCard from './MovieCard'
-import MovieDate from './MovieDate'
+import React, { useState } from "react";
+import MovieCard from "./MovieCard";
+import MovieDate from "./MovieDate";
 
 const MovieSchedule = () => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -9,7 +9,8 @@ const MovieSchedule = () => {
     setSelectedDate(date);
   };
   return (
-    <div className="px-[10%] py-20 font-sunflower">
+    <div className="px-[10%] py-20 font-sunflower bg-black bg-opacity-100 ">
+      {/* bg-black */}
       <div className="flex flex-col justify-center items-center gap-6 pb-10">
         <h1 className="text-[2.5rem] text-white">
           Movies <span className="text-purple">to</span> Watch
@@ -25,11 +26,11 @@ const MovieSchedule = () => {
         </form>
       </div>
       <div className="flex flex-col justify-center items-center gap-16">
-        <MovieDate onDateClick={handleDateClick} />
+        <MovieDate onDateClick={handleDateClick} className="max-[867px]:flex" />
         <MovieCard selectedDate={selectedDate} />
       </div>
     </div>
   );
-}
+};
 
-export default MovieSchedule
+export default MovieSchedule;

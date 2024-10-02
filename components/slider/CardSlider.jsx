@@ -47,7 +47,7 @@ const CardSlider = () => {
                 </h1>
               </div>
               <div className="content absolute inset-0 w-full h-full p-[25px] pb-[65px] flex flex-col justify-end bg-black/50 bg-gradient-to-b from-transparent via-transparent to-black/80 text-white opacity-0">
-                <div className="score absolute top-[12px] right-[12px] w-[45px] aspect-[1/1] flex items-center justify-center text-black bg-[#ffe550] rounded-full shadow-[0_50px_50px_-20px_rgba(50,50,93,0.25),0_30px_60px_-30px_rgba(0,0,0,0.3),inset_0_-2px_6px_0_rgba(10,37,64,0.35)]">
+                <div className="score absolute top-[12px] right-[12px] w-[45px] aspect-[1/1] flex items-center justify-center text-white bg-purple rounded-full shadow-[0_50px_50px_-20px_rgba(50,50,93,0.25),0_30px_60px_-30px_rgba(0,0,0,0.3),inset_0_-2px_6px_0_rgba(10,37,64,0.35)]">
                   {movie.badge}
                 </div>
                 <div className="text">

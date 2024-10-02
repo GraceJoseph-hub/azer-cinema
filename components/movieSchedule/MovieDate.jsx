@@ -1,31 +1,7 @@
-// import React from 'react'
-
-// const MovieDate = ({onDateClick}) => {
-//   const date = new Date();
-//   const month = date.toLocaleString("en-US", { month: "long" });
-//   const day = date.toLocaleString("en-US", { day: "2-digit" });
-//   const year = date.getFullYear();
-
-//   const handleClick = () => {
-//     onDateClick(date)
-//   }
-//   return (
-//     <div onClick={handleClick} className="w-[15%]">
-//       <div className="flex flex-col justify-center items-center cursor-pointer bg-purple border rounded-xl">
-//         <div>{month}</div>
-//         <div>{year}</div>
-//         <div>{day}</div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default MovieDate
-
 import React, { useState, useEffect } from "react";
 
 
-const MovieDate = ({ onDateClick }) => {
+const MovieDate = ({ onDateClick, className }) => {
   const [weekDates, setWeekDates] = useState([]);
   const [selectedDate, setSelectedDate] = useState(null);
 
@@ -55,7 +31,7 @@ const MovieDate = ({ onDateClick }) => {
   };
 
   return (
-    <div className="flex gap-4 justify-center">
+    <div className="flex gap-4 justify-center max-[867px]:flex-wrap">
       {weekDates.map((date, index) => {
         const isSelected =
           selectedDate && selectedDate.toDateString() === date.toDateString();
@@ -67,17 +43,17 @@ const MovieDate = ({ onDateClick }) => {
           <div
             key={index}
             onClick={() => handleClick(date)}
-            className={`cursor-pointer flex flex-col items-center p-4 rounded-md 
+            className={`cursor-pointer flex flex-col items-center p-4 rounded-md border shadow-[2px_2px_2px_#f993f9] ${className}
               ${
-                isSelected
-                  ? "bg-purple text-white transform hover:scale-105 hover:shadow-xl transition delay-50 duration-300 ease-in-out"
-                  : "bg-gray-700 text-white"
-              } transition-all duration-200`}
+                isSelected ? "bg-purple text-white " : " text-white"
+              } transition-all duration-200 shadow-lg hover:shadow-2xl transform hover:-translate-y-1`}
           >
-            <div className="text-3xl font-bold">
-              {day} {month}
+            <div className="">
+              <div className="text-3xl font-bold">
+                {day} {month}
+              </div>
+              <div>{weekday}</div>
             </div>
-            <div>{weekday}</div>
           </div>
         );
       })}
