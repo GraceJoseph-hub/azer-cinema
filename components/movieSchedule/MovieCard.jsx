@@ -40,11 +40,11 @@ const MovieCard = ({selectedDate}) => {
                 <h1 className="text-[1.5rem] font-bold animate__animated animate__fadeInDown animate__slower animate__infinite">
                   {movie.title}
                 </h1>
-                <p className="text-white text-[1rem] animate__animated animate__fadeInUp animate__slower animate__infinite">
+                <p className="text-white text-[1rem] animate__animated animate__fadeInUp animate__slower animate__repeat-2">
                   {movie.text}
                 </p>
                 <div className="flex items-center justify-between gap-5 w-full">
-                  <p className="border px-2 rounded-md text-gray-300 shadow-[2px_2px_2px_#f993f9] animate__animated animate__fadeInLeft animate__slower animate__repeat-1">
+                  <p className="border px-2 rounded-md text-gray-300 shadow-[2px_2px_2px_#f993f9] animate__animated animate__fadeInLeft animate__slower">
                     {movie.genre}
                   </p>
                   <p className="text-purple text-sm font-bold w-[100px] animate__animated animate__fadeInRight animate__slower">
@@ -53,7 +53,7 @@ const MovieCard = ({selectedDate}) => {
                 </div>
               </div>
             </div>
-            <button className="absolute left-[30%] top-[-10px] z-1 border border-r-purple px-2 rounded-3xl shadow-[2px_2px_2px_#f993f9]">
+            <button className="absolute left-[30%] top-[-10px] border border-r-purple px-2 rounded-3xl shadow-[2px_2px_2px_#f993f9]">
               View Details
             </button>
           </div>

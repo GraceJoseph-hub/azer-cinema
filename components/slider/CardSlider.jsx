@@ -50,7 +50,7 @@ const CardSlider = () => {
                 <div className="score absolute top-[12px] right-[12px] w-[45px] aspect-[1/1] flex items-center justify-center text-white bg-purple rounded-full shadow-[0_50px_50px_-20px_rgba(50,50,93,0.25),0_30px_60px_-30px_rgba(0,0,0,0.3),inset_0_-2px_6px_0_rgba(10,37,64,0.35)]">
                   {movie.badge}
                 </div>
-                <div className="text">
+                <div className="text w-[50%]">
                   <h2>{movie.subTitle}</h2>
                   <p>{movie.text}</p>
                 </div>
