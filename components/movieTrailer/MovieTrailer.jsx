@@ -13,7 +13,9 @@ const MovieTrailer = () => {
           <div className="absolute top-16 left-16 flex items-center gap-10">
             <Image src={logo} className="w-[40px] h-[40px] rounded-full" />
             <div>
-              <h1 className="text-purple text-[1.3rem] font-bold">{trailer.title}</h1>
+              <h1 className="text-purple text-[1.3rem] font-bold">
+                {trailer.title}
+              </h1>
               <p className="text-white">{trailer.description}</p>
             </div>
           </div>
