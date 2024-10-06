@@ -1,14 +1,15 @@
 import Layout from "@/components/layout/Layout";
 import Image from 'next/image'
 import aboutUs from '../public/img/aboutUs.jpg'
+import Contact from "@/components/contactInfo/Contact";
 import aboutUs2 from '../public/img/aboutUs2.jpg'
 import aboutUs3 from '../public/img/aboutUs3.jpg'
 
 
-const Contact = () => {
+const About = () => {
   return (
     <Layout>
-      <div className="relative h-screen w-full bg-[url('/img/bg6.jpg')] bg-fixed bg-cover bg-center">
+      <div className="relative h-screen w-full bg-[url('/img/bg8.png')] bg-fixed bg-cover bg-center">
         <div className="absolute top-[40%] left-[10%] w-[30%]">
           <h1 className="text-[2.5rem] font-bold text-purple">About Us</h1>
           <p>
@@ -46,8 +47,11 @@ const Contact = () => {
           </p>
         </div>
       </div>
+      <div className="">
+        <Contact />
+      </div>
     </Layout>
   );
 };
 
-export default Contact;
+export default About;
