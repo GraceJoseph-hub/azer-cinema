@@ -1,8 +1,11 @@
 import { useRouter } from "next/router";
-import Image from "next/image";
 import Header from "../header/Header";
 import CardSlider from "../slider/CardSlider";
 import Footer from "../footer/Footer";
+import CartBtn from "../cart/CartBtn";
+
+
+
 
 const Layout = ({ children, className }) => {
   const router = useRouter();
@@ -14,22 +17,11 @@ const Layout = ({ children, className }) => {
           <Header />
         </div>
         {currentRoute === "/" && <CardSlider />}
-        {/* {currentRoute === "/" ? (
-          <CardSlider />
-        ) : (
-          <div
-            className="h-[100vh] w-full relative bg-fixed"
-            // style={{ backgroundAttachment: "fixed" }}
-          >
-            <Image
-              src={imgUrl}
-              alt="Background Image"
-              className="w-full h-full object-cover object-center"
-              layout="fill"
-              priority={true}
-            />
+        {currentRoute === "/FoodDrinks" && (
+          <div className="fixed top-4 right-4 z-50">
+            <CartBtn />
           </div>
-        )} */}
+        )}
       </div>
       <main className=" h-max">{children}</main>
       <Footer />

@@ -2,7 +2,6 @@ import React from 'react'
 
 const ContactForm = () => {
   return (
-    <div>
       <form action="" className="flex gap-10">
         <div className="flex flex-col gap-2">
           <label htmlFor="">Email</label>
@@ -25,7 +24,6 @@ const ContactForm = () => {
           />
         </div>
       </form>
-    </div>
   );
 }
 

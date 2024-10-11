@@ -31,7 +31,7 @@ const About = () => {
         </svg>
       </div>
       <div className="px-[4%] py-10 flex items-center gap-20">
-        <Image src={aboutUs} />
+        <Image src={aboutUs} className="w-full" />
         <div className="flex flex-col justify-center items-center gap-10">
           <h2 className="text-[2rem] text-purple">Title</h2>
           <p>
