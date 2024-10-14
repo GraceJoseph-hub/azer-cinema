@@ -1,29 +1,10 @@
 import "animate.css";
 import Image from 'next/image'
-import moviesData from './moviesData'
-import { useState, useEffect } from "react";
+import useFilteredMovies from '../../components/hooks/useFilteredMovies'
 
-const MovieCard = ({selectedDate}) => {
-  const [dailyMovies, setDailyMovies] = useState([]);
-  const [errorMessage, setErrorMessage] = useState("");
-
-  useEffect(() => {
-    if (selectedDate) {
-      const formattedDate = selectedDate.toISOString().split("T")[0];
-      const availableMovies = moviesData.filter(
-        (movie) => movie.date === formattedDate
-      );
-      if (availableMovies.length > 0) {
-        setDailyMovies(availableMovies);
-        setErrorMessage("");
-      } else {
-        setDailyMovies([]);
-        setErrorMessage("No movies available for this date.");
-      }
-    } else {
-      setDailyMovies(moviesData);
-    }
-  }, [selectedDate]);
+const MovieCard = ({ selectedDate }) => {
+  const { dailyMovies, errorMessage } = useFilteredMovies(selectedDate);
+  
   
   return (
     <div className=" flex flex-wrap gap-4">
@@ -47,9 +28,9 @@ const MovieCard = ({selectedDate}) => {
                   <p className="border px-2 rounded-md text-gray-300 shadow-[2px_2px_2px_#f993f9] animate__animated animate__fadeInLeft animate__slower">
                     {movie.genre}
                   </p>
-                  <p className="text-purple text-sm font-bold w-[100px] animate__animated animate__fadeInRight animate__slower">
-                    Times: {movie.times.join(", ")}
-                  </p>
+                  <button className="text-white border text-center rounded-md py-1 text-sm font-bold w-[100px] animate__animated animate__fadeInRight animate__slower">
+                     {movie.option}
+                  </button>
                 </div>
               </div>
             </div>

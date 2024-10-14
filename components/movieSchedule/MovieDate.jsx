@@ -31,7 +31,7 @@ const MovieDate = ({ onDateClick, className }) => {
   };
 
   return (
-    <div className="flex gap-4 justify-center max-[867px]:flex-wrap">
+    <div className={`flex gap-4 justify-center max-[867px]:flex-wrap ${className}`}>
       {weekDates.map((date, index) => {
         const isSelected =
           selectedDate && selectedDate.toDateString() === date.toDateString();

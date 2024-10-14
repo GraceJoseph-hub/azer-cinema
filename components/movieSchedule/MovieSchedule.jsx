@@ -10,7 +10,6 @@ const MovieSchedule = () => {
   };
   return (
     <div className="px-[10%] py-20 font-sunflower bg-black bg-opacity-100 ">
-      {/* bg-black */}
       <div className="flex flex-col justify-center items-center gap-6 pb-10">
         <h1 className="text-[2.5rem] text-white">
           Movies <span className="text-purple">to</span> Watch

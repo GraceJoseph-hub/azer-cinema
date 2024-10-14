@@ -4,7 +4,7 @@ import { useCart } from "../cart/CartProvider";
 
 const ProductCard = ({ product }) => {
   const [quantity, setQuantity] = useState(0);
-   const { addToCart } = useCart();
+  const { addToCart } = useCart();
 
   const increment = () => setQuantity(quantity + 1)
   const decrement = () => setQuantity(quantity > 0 ? quantity - 1 : 0);

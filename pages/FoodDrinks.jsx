@@ -41,7 +41,6 @@ const FoodDrinks = () => {
             </div>
           ))}
         </div>
-        {/* <ProductCard /> */}
       </div>
     </Layout>
   );

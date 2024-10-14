@@ -2,8 +2,7 @@ import Layout from "@/components/layout/Layout";
 import Image from 'next/image'
 import aboutUs from '../public/img/aboutUs.jpg'
 import Contact from "@/components/contactInfo/Contact";
-import aboutUs2 from '../public/img/aboutUs2.jpg'
-import aboutUs3 from '../public/img/aboutUs3.jpg'
+
 
 
 const About = () => {
