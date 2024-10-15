@@ -114,7 +114,7 @@ const moviesData = [
   {
     id: 9,
     date: "2024-10-18",
-    img: img8,
+    img: img22,
     title: "The Watchmen",
     genre: "Romance",
     text: "A drama series that dives into the world of a Chicago restaurant.",
@@ -125,7 +125,7 @@ const moviesData = [
   {
     id: 10,
     date: "2024-10-19",
-    img: img9,
+    img: img12,
     title: "When Love Strikes",
     genre: "Adventure",
     text: "A drama series that dives into the world of a Chicago restaurant.",
@@ -169,7 +169,7 @@ const moviesData = [
   {
     id: 14,
     date: "2024-10-19",
-    img: img13,
+    img: img17,
     title: "Alfred Hitchcock's",
     genre: "Drama",
     text: "A drama series that dives into the world of a Chicago restaurant.",
@@ -246,7 +246,7 @@ const moviesData = [
   {
     id: 21,
     date: "2024-10-16",
-    img: img20,
+    img: img22,
     title: "90 Minutes in Heaven",
     genre: "Drama",
     text: "A drama series that dives into the world of a Chicago restaurant.",
@@ -257,7 +257,7 @@ const moviesData = [
   {
     id: 22,
     date: "2024-10-15",
-    img: img21,
+    img: img14,
     title: "Safe Haven",
     genre: "Thriller",
     text: "A drama series that dives into the world of a Chicago restaurant.",
@@ -356,7 +356,7 @@ const moviesData = [
   {
     id: 31,
     date: "2024-10-11",
-    img: img8,
+    img: img16,
     title: "When Love Strikes",
     genre: "Romance",
     text: "A drama series that dives into the world of a Chicago restaurant.",
@@ -367,7 +367,7 @@ const moviesData = [
   {
     id: 32,
     date: "2024-10-10",
-    img: img9,
+    img: img15,
     title: "When Love Strikes",
     genre: "Romance",
     text: "A drama series that dives into the world of a Chicago restaurant.",
@@ -400,7 +400,7 @@ const moviesData = [
   {
     id: 35,
     date: "2024-10-09",
-    img: img20,
+    img: img22,
     title: "When Love Strikes",
     genre: "Drama",
     text: "A drama series that dives into the world of a Chicago restaurant.",
@@ -411,7 +411,7 @@ const moviesData = [
   {
     id: 36,
     date: "2024-10-08",
-    img: img9,
+    img: img7,
     title: "When Love Strikes",
     genre: "Drama",
     text: "A drama series that dives into the world of a Chicago restaurant.",
@@ -433,7 +433,7 @@ const moviesData = [
   {
     id: 38,
     date: "2024-10-07",
-    img: img20,
+    img: img21,
     title: "When Love Strikes",
     genre: " Drama",
     text: "A drama series that dives into the world of a Chicago restaurant.",
@@ -466,7 +466,7 @@ const moviesData = [
   {
     id: 41,
     date: "2024-10-06",
-    img: img13,
+    img: img15,
     title: "When Love Strikes",
     genre: "Drama",
     text: "A drama series that dives into the world of a Chicago restaurant",
@@ -486,7 +486,7 @@ const moviesData = [
     time: ["10:35", "12:05"],
   },
   {
-    id: 43,
+    id: 40,
     date: "2024-10-05",
     img: img19,
     title: "When Love Strikes",
