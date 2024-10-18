@@ -1,18 +1,16 @@
-import "animate.css";
-import Image from 'next/image'
-import Link from "next/link";
-import useFilteredMovies from '../../components/hooks/useFilteredMovies'
+import Link from 'next/link';
+import moviesData from '../movieSchedule/moviesData';
+import Image from 'next/image';
 
-const MovieCard = ({ selectedDate }) => {
-  const { dailyMovies, errorMessage } = useFilteredMovies(selectedDate);
-  
-  
+const ForYou = () => {
+  const suggestedMovies = moviesData.slice(0, 6);
   return (
-    <div className="grid grid-flow-row grid-cols-3 gap-8 max-[768px]:grid-cols-2 max-[768px]:gap-10">
-      {dailyMovies.length > 0 ? (
-        dailyMovies.map((movie, index) => (
+    <div className="px-[10%] py-[4%] max-[768px]:px-0">
+      <h2>Suggested for You</h2>
+      <div className="grid grid-flow-row grid-cols-3 gap-8 max-[768px]:grid-cols-2 ">
+        {suggestedMovies.map((movie, index) => (
           <div key={index} className="relative">
-            <div className="relative w-[320px] h-[350px] border-l rounded-md overflow-hidden shadow-[2px_2px_2px_#f993f9] max-[768px]:w-[200px]">
+            <div className="relative w-[320px] h-[350px] border-l rounded-md overflow-hidden shadow-[2px_2px_2px_#f993f9]">
               <Image
                 src={movie.img}
                 alt={movie.title}
@@ -45,12 +43,10 @@ const MovieCard = ({ selectedDate }) => {
               View Details
             </Link>
           </div>
-        ))
-      ) : (
-        <p className="text-white text-lg">{errorMessage || "Loading..."}</p>
-      )}
+        ))}
+      </div>
     </div>
   );
 }
 
-export default MovieCard
+export default ForYou

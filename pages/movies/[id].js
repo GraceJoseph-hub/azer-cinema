@@ -13,6 +13,9 @@ const TicketDetails = () => {
   const router = useRouter();
   const { id } = router.query;
 
+  const handleBack = () => {
+    router.back();
+  };
   const increment = () => {
     setError("")
     setQuantity(quantity + 1);
@@ -25,7 +28,8 @@ const TicketDetails = () => {
 
   const handleProceed = () => {
     if (quantity > 0) {
-      setScreenState(screenState + 1); 
+      setScreenState(screenState + 1);
+       setError("");
     } else {
       setError("Please select the number of tickets.");
     }
@@ -40,9 +44,19 @@ const TicketDetails = () => {
 
   return (
     <Layout>
-      <div className="h-screen w-full bg-[url('/img/ticket2.jpg')] bg-no-repeat bg-cover bg-top"></div>
+      <div className="h-screen w-full bg-[url('/img/ticket2.jpg')] bg-no-repeat bg-cover bg-top">
+        <p className="absolute top-[60%] left-[10%] w-[30%] capitalize text-white text-[1.2rem]">
+          book your ticket now and dive into the cinematic experience!
+        </p>
+      </div>
       {screenState === 0 && (
         <div className="px-[5%] my-[50px]">
+          <button
+            onClick={handleBack}
+            className="border border-purple px-4 mb-6 text-[1rem] rounded-md"
+          >
+            &#8592;
+          </button>
           <div className="flex items-center gap-14 bg-gray-900 rounded-lg">
             <Image src={movie.img} alt={movie.title} className="rounded-lg" />
             <div>
@@ -72,7 +86,11 @@ const TicketDetails = () => {
             </div>
             <button
               onClick={handleProceed}
-              className="mt-6 bg-purple text-white px-6 py-1 rounded-md"
+              className={`mt-6 text-white px-6 py-1 rounded-md ${
+                quantity === 0
+                  ? "bg-gray-900 text-white"
+                  : "bg-purple text-white"
+              }`}
             >
               Proceed
             </button>

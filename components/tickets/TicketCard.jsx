@@ -20,16 +20,22 @@ const TicketCard = ({ selectedDate}) => {
                 alt={movie.title}
                 className="rounded-t-md w-[300px] h-[300px] object-cover"
               />
-              <div className="p-4 bg-black bg-opacity-50 w-full">
+              <div className="flex flex-col gap-3 p-4 bg-black bg-opacity-50 w-full">
                 <h1 className="text-[1.5rem] font-bold text-white">
                   {movie.title}
                 </h1>
-                <p className="text-white text-[1rem]">{movie.text}</p>
-                <p className="text-white text-[1rem]">{movie.genre}</p>
-                <p className="text-white text-[1rem]">
+                <p className="text-white text-[0.8rem]">{movie.text}</p>
+                <p className="text-white text-[0.8rem]">
+                  <span className="text-purple">Genre :</span> {movie.genre}
+                </p>
+                <p className="text-white text-[0.8rem]">
+                  <span className="text-purple">Times : </span>{" "}
                   {movie.time.join(", ")}
                 </p>
-                <p className="text-white text-[1rem]">{movie.screen}</p>
+                <p className="text-white text-[0.8rem]">
+                  <span className="text-purple">Movie Screen : </span>
+                  {movie.screen}
+                </p>
               </div>
             </Link>
           ))}
