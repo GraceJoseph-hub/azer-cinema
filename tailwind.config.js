@@ -17,6 +17,13 @@ module.exports = {
         "dark-grey": "#B8B8B8",
         purple: "#ba10ba",
       },
+      screens: {
+        'xs': '320px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+      }
     },
   },
   plugins: [],

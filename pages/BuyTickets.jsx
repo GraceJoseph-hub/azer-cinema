@@ -12,7 +12,7 @@ const BuyTickets = () => {
 
   return (
     <Layout>
-      <div className="relative h-screen w-full bg-[url('/img/ticket2.jpg')] bg-no-repeat bg-cover bg-top">
+      <div className="relative h-[50vh] w-full bg-[url('/img/ticket2.jpg')] bg-no-repeat bg-cover bg-top">
         <div className="absolute top-[60%] left-[10%] w-[30%]">
           <h2 className="text-[2rem] text-purple font-bold">
             Choose Your Seat

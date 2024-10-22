@@ -1,9 +1,6 @@
 import React from 'react'
 import BenefitsCard from './BenefitsCard';
-// import affordable from "../../public/img/affordable.jpg";
-// import customerService from "../../public/img/customerService.jpg";
-// import latestMovies from "../../public/img/latestMovies.jpg";
-// import snacks from "../../public/img/snacks.jpeg";
+
 
 const Benefits = () => {
   const benefitsData = [
@@ -29,11 +26,11 @@ const Benefits = () => {
       <div className="flex justify-between items-center w-full">
         <div className="font-bold">
           <h2 className="text-[1rem] text-purple">Our Benefits</h2>
-          <p className="text-[3rem] capitalize">
-            Why you should choose azer cinema
+          <p className="text-[2rem] capitalize">
+            Why you should choose <span className='text-purple'>azer cinema</span>
           </p>
         </div>
-        <div className="w-[50%] text-purple">
+        <div className="w-[50%] text-white">
           <p className="">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eius
             to mod tempor incididunt ut labore et dolore magna aliqua. Ut enims
@@ -42,7 +39,7 @@ const Benefits = () => {
         </div>
       </div>
       {/* <BenefitsCard /> */}
-      <div className='grid grid-cols-4'>
+      <div className="grid grid-cols-4">
         {benefitsData.map((benefit, index) => (
           <BenefitsCard
             key={index}

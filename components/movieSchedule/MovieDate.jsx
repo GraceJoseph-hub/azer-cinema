@@ -43,7 +43,7 @@ const MovieDate = ({ onDateClick, className }) => {
           <div
             key={index}
             onClick={() => handleClick(date)}
-            className={`cursor-pointer flex flex-col items-center p-4 rounded-md border shadow-[2px_2px_2px_#f993f9] ${className}
+            className={`cursor-pointer flex flex-col items-center p-4 rounded-md border ${className}
               ${
                 isSelected ? "bg-purple text-white " : " text-white"
               } transition-all duration-200 shadow-lg hover:shadow-2xl transform hover:-translate-y-1`}

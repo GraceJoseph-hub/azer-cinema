@@ -8,7 +8,7 @@ import Contact from "@/components/contactInfo/Contact";
 const About = () => {
   return (
     <Layout>
-      <div className="relative h-screen w-full bg-[url('/img/bg8.png')] bg-fixed bg-cover bg-center">
+      <div className="relative h-[50vh] w-full bg-[url('/img/bg8.png')] bg-fixed bg-cover bg-center">
         <div className="absolute top-[40%] left-[10%] w-[30%]">
           <h1 className="text-[2.5rem] font-bold text-purple">About Us</h1>
           <p>
