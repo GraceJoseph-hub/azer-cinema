@@ -18,7 +18,7 @@ module.exports = {
         purple: "#ba10ba",
       },
       screens: {
-        'xs': '320px',
+        'xs': '250px',
         'sm': '640px',
         'md': '768px',
         'lg': '1024px',

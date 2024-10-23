@@ -9,9 +9,11 @@ const About = () => {
   return (
     <Layout>
       <div className="relative h-[50vh] w-full bg-[url('/img/bg8.png')] bg-fixed bg-cover bg-center">
-        <div className="absolute top-[40%] left-[10%] w-[30%]">
-          <h1 className="text-[2.5rem] font-bold text-purple">About Us</h1>
-          <p>
+        <div className="absolute xs:top-[50%] md:top-[40%] xs:left-[6%] md:left-[10%] xs:w-[40%] md:w-[30%]">
+          <h1 className="xs:text-[1.2rem] md:text-[2.5rem] font-bold text-purple">
+            About Us
+          </h1>
+          <p className="xs:text-[0.8rem]">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, omnis
             in? Atque praesentium modi dignissimos?
           </p>
@@ -29,9 +31,9 @@ const About = () => {
           ></path>
         </svg>
       </div>
-      <div className="px-[4%] py-10 flex items-center gap-20">
+      <div className="xs:px-[10%] md:px-[4%] xs:py-8 md:py-10 xs:flex xs:flex-col md:flex md:flex-row items-center gap-20">
         <Image src={aboutUs} className="w-full" />
-        <div className="flex flex-col justify-center items-center gap-10">
+        <div className="flex flex-col justify-center items-center xs:gap-5 md:gap-10 md:w-[90%]">
           <h2 className="text-[2rem] text-purple">Title</h2>
           <p>
             nesciunt facilis quia asperiores natus labore laboriosam quibusdam

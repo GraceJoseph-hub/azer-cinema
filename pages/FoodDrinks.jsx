@@ -34,7 +34,7 @@ const FoodDrinks = () => {
             with all the snacks you crave!
           </p>
         </div>
-        <div className="w-full grid grid-cols-4 gap-6">
+        <div className="w-full grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((product, index) => (
             <div key={index}>
               <ProductCard product={product} />
