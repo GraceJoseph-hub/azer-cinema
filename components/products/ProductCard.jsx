@@ -21,29 +21,31 @@ const ProductCard = ({ product }) => {
         <Image src={product.image} alt={product.name} height={200} />
       </div>
       <div className="flex flex-col gap-4">
-        <p className="text-[1.3rem] text-black font-bold font-sunflower">
+        <p className="xs:text-[1rem] xs:text-center md:text-[1.3rem] text-white font-bold font-sunflower">
           {product.name}
         </p>
-        <div className="flex justify-between font-bold text-black italic">
-          <p className="">{product.size}</p>
-          <p className="">#{product.price}</p>
-        </div>
-        <div className="flex justify-between">
-          <button
-            onClick={decrement}
-            className="text-black font-bold  px-4 border-purple bg-white rounded-full shadow-[1px_2px_0_1px_#ba10ba]"
-          >
-            Remove
-          </button>
-          <span className="text-white font-bold border px-4 border-purple rounded-full shadow-[1px_2px_0_1px_#ba10ba]">
-            {quantity}
-          </span>
-          <button
-            onClick={increment}
-            className="text-black font-bold  px-4 border-purple bg-white rounded-full shadow-[1px_2px_0_1px_#ba10ba]"
-          >
-            Add
-          </button>
+        <div className="xs:flex">
+          <div className="xs:flex-col md:flex md:justify-between font-bold text-white italic">
+            <p className="">{product.size}</p>
+            <p className="">#{product.price}</p>
+          </div>
+          <div className="xs:flex-col xs:justify-center xs items-center md:flex md:justify-between">
+            <button
+              onClick={decrement}
+              className="text-black xs:text-[9px] font-bold xs:px-2 md:px-4 border-purple bg-white rounded-full shadow-[1px_2px_0_1px_#ba10ba]"
+            >
+              Remove
+            </button>
+            <span className="text-white xs:text-[9px] font-bold border px-4 border-purple rounded-full shadow-[1px_2px_0_1px_#ba10ba]">
+              {quantity}
+            </span>
+            <button
+              onClick={increment}
+              className="text-black xs:text-[9px] xs:px-2 font-bold  px-4 border-purple bg-white rounded-full shadow-[1px_2px_0_1px_#ba10ba]"
+            >
+              Add
+            </button>
+          </div>
         </div>
         <button
           className="border-purple bg-white rounded-md text-black"

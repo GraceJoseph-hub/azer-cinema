@@ -3,13 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import useFilteredMovies from "../../components/hooks/useFilteredMovies";
 
-const MovieCard = ({ selectedDate, limit }) => {
+const MovieCard = ({ selectedDate, limit, className }) => {
   const { dailyMovies, errorMessage } = useFilteredMovies(selectedDate);
 
   const moviesToShow = limit ? dailyMovies.slice(0, limit) : dailyMovies;
 
   return (
-    <div className="mt-14 xs:grid xs:grid-rows-2 xs:grid-cols-2 xs:gap-8 xs:px-2 md:grid md:grid-flow-row md:grid-cols-2 md:gap-x-8 md:px-0 lg:grid lg:grid-cols-3 lg:gap-x-8">
+    <div className={`mt-14 xs:grid xs:grid-rows-2 xs:grid-cols-2 xs:gap-8 xs:px-2 md:grid md:grid-flow-row md:grid-cols-2 md:gap-x-8 md:px-0 lg:grid lg:grid-cols-3 lg:gap-x-8 ${className}`}>
       {moviesToShow.length > 0 ? (
         moviesToShow.map((movie, index) => (
           <div key={index} className="relative">
