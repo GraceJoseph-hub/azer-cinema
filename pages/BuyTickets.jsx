@@ -23,7 +23,7 @@ const BuyTickets = () => {
           </p>
         </div>
       </div>
-      <div className="flex xs:gap-[2rem] md:gap-[5rem] items-start px-[5%] xs:py-[5%] md:py-[4%] w-full">
+      <div className="flex xs:gap-[2rem] md:gap-[5rem] items-start px-[15%] xs:py-[10%] md:py-[4%] w-full">
         <MovieDate onDateClick={handleDateClick} className=" flex flex-col" />
         <TicketCard selectedDate={selectedDate} />
       </div>

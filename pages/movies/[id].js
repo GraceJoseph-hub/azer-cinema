@@ -38,7 +38,8 @@ const TicketDetails = () => {
 
   if (!id) return <p>Loading...</p>;
 
-  const movie = moviesData.find((movie) => movie.id === parseInt(id));
+  const movie = moviesData.find((mv) => mv?.id === parseInt(id));
+  console.log(movie);
 
   if (!movie) return <p>Movie not found</p>;
 

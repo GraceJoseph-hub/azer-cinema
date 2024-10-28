@@ -1,9 +1,7 @@
 import Layout from "@/components/layout/Layout";
-import Image from 'next/image'
-import aboutUs from '../public/img/aboutUs.jpg'
-import Contact from "@/components/contactInfo/Contact";
-
-
+import Image from "next/image";
+import aboutUs from "../public/img/aboutUs.jpg";
+import Contact from "@/pages/Contact";
 
 const About = () => {
   return (
@@ -49,7 +47,7 @@ const About = () => {
         </div>
       </div>
       <div className="">
-        <Contact />
+        {/* <Contact /> */}
       </div>
     </Layout>
   );

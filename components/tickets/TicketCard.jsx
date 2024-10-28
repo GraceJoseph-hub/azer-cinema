@@ -13,7 +13,7 @@ const TicketCard = ({ selectedDate}) => {
             <Link
               href={`/movies/${movie.id}`}
               key={index}
-              className="flex bg-black rounded-md overflow-hidden"
+              className="xs:flex xs:flex-col md:flex bg-black rounded-md overflow-hidden"
             >
               <Image
                 src={movie.img}
