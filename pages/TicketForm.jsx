@@ -85,9 +85,9 @@ const TicketForm = ({screenState}) => {
         </button>
         <form
           onSubmit={handleProceed}
-          className=" flex flex-col justify-center items-center gap-5"
+          className=" flex flex-col justify-center items-center gap-5 mt-5"
         >
-          <div className="flex flex-col w-[40%]">
+          <div className="flex flex-col w-full md:w-[40%]">
             <label htmlFor="" className="text-purple">
               Name
             </label>
@@ -102,7 +102,7 @@ const TicketForm = ({screenState}) => {
             />
             {nameError && <p className="text-red-500 text-sm">{nameError}</p>}
           </div>
-          <div className="flex flex-col w-[40%]">
+          <div className="flex flex-col w-full md:w-[40%]">
             <label htmlFor="" className="text-purple">
               Email
             </label>
@@ -117,7 +117,7 @@ const TicketForm = ({screenState}) => {
             />
             {emailError && <p className="text-red-500 text-sm">{emailError}</p>}
           </div>
-          <div className="flex flex-col w-[40%]">
+          <div className="flex flex-col w-full md:w-[40%]">
             <label htmlFor="" className="text-purple">
               Phone number
             </label>

@@ -45,8 +45,8 @@ const TicketDetails = () => {
 
   return (
     <Layout>
-      <div className="h-screen w-full bg-[url('/img/ticket2.jpg')] bg-no-repeat bg-cover bg-top">
-        <p className="absolute top-[60%] left-[10%] w-[50%] md:w-[30%] capitalize text-white text-[1.2rem]">
+      <div className="h-[50vh] w-full bg-[url('/img/ticket2.jpg')] bg-no-repeat bg-cover bg-top">
+        <p className="absolute top-[30%] left-[10%] w-[50%] md:w-[30%] capitalize text-white text-[1.2rem]">
           book your ticket now and dive into the cinematic experience!
         </p>
       </div>
@@ -58,12 +58,20 @@ const TicketDetails = () => {
           >
             &#8592;
           </button>
-          <div className="flex items-center gap-14 bg-gray-900 rounded-lg">
-            <Image src={movie.img} alt={movie.title} className="rounded-lg" />
-            <div>
-              <h2 className="text-[2rem]">Movie Title : {movie.title}</h2>
-              <p className="text-[1rem]">Genre: {movie.genre}</p>
-              <p className="text-[1rem]">Duration: {movie.duration}</p>
+          <div className="flex flex-col md:flex-row md:items-center gap-8 bg-gray-900 rounded-lg">
+            <div className="pl-3 pt-3 md:pb-3">
+              <Image src={movie.img} alt={movie.title} className="rounded-lg" />
+            </div>
+            <div className="px-3 pb-3">
+              <h2 className="text-[1rem] md:text-[2rem]">
+                Movie Title : {movie.title}
+              </h2>
+              <p className="text-[0.8rem] md:text-[1rem]">
+                Genre: {movie.genre}
+              </p>
+              <p className="text-[0.8rem] md:text-[1rem]">
+                Duration: {movie.duration}
+              </p>
             </div>
           </div>
           <div className="my-[50px]">
@@ -99,7 +107,9 @@ const TicketDetails = () => {
           </div>
         </div>
       )}
-      {screenState === 1 && <TicketForm onProceed={handleProceed} screenState={setScreenState} />}
+      {screenState === 1 && (
+        <TicketForm onProceed={handleProceed} screenState={setScreenState} />
+      )}
     </Layout>
   );
 };
