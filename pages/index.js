@@ -7,7 +7,7 @@ import MovieTrailer from "@/components/movieTrailer/MovieTrailer";
 
 export default function Home() {
   return (
-    <Layout className="">
+    <Layout>
       <MovieSchedule />
       <MovieTrailer />
       <Benefits />

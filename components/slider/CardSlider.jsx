@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const CardSlider = () => {
   return (
-    <div className="h-screen w-full">
+    <div className="h-[50vh] md:h-screen w-full">
       <Swiper
         modules={[Pagination, Autoplay, EffectFade]}
         effect="fade"
