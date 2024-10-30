@@ -42,7 +42,9 @@ const Header = () => {
 
   return (
     <div className="flex gap-14 max-[768px]:justify-between max-[768px]:w-full max-[768px]:px-6">
-      <Image src={logo} alt="logo" className="w-[40px] h-[50px]" />
+      <Link href="/">
+        <Image src={logo} alt="logo" className="w-[40px] h-[50px]" />
+      </Link>
 
       {/* desktop screen */}
       {links.map((link, index) => (

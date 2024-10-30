@@ -49,10 +49,10 @@ const MovieDate = ({ onDateClick, className }) => {
               } transition-all duration-200 shadow-lg hover:shadow-2xl transform hover:-translate-y-1`}
           >
             <div className="">
-              <div className="xs:text-xl md:text-3xl font-bold">
+              <div className="text-[1rem] md:text-2xl font-bold">
                 {day} {month}
-              </div>
               <div className="xs:text-sm">{weekday}</div>
+              </div>
             </div>
           </div>
         );

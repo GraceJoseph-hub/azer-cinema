@@ -13,7 +13,7 @@ const BuyTickets = () => {
   return (
     <Layout>
       <div className="relative h-[70vh] w-full bg-[url('/img/ticket2.jpg')] bg-no-repeat bg-cover bg-top">
-        <div className="absolute top-[60%] left-[10%] w-[30%]">
+        <div className="absolute top-[60%] left-[10%] w-[30%] md:w-[30%]">
           <h2 className="xs:text-[1rem] md:text-[2rem] text-purple font-bold">
             Choose Your Seat
           </h2>
@@ -23,7 +23,7 @@ const BuyTickets = () => {
           </p>
         </div>
       </div>
-      <div className="flex xs:gap-[2rem] md:gap-[5rem] items-start px-[15%] xs:py-[10%] md:py-[4%] w-full">
+      <div className="flex xs:gap-[2rem] md:gap-[5rem] items-start px-[10%] md:px-[15%] xs:py-[10%] md:py-[4%] w-full">
         <MovieDate onDateClick={handleDateClick} className=" flex flex-col" />
         <TicketCard selectedDate={selectedDate} />
       </div>
