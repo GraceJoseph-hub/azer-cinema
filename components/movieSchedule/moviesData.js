@@ -290,7 +290,7 @@ const moviesData = [
   },
   {
     id: 24,
-    date: "2024-10-14",
+    date: "2024-10-30",
     img: img1,
     title: "When Love Strikes",
     genre: "Romance",
@@ -301,7 +301,7 @@ const moviesData = [
   },
   {
     id: 25,
-    date: "2024-10-14",
+    date: "2024-10-30",
     img: img2,
     title: "When Love Strikes",
     genre: "Romance",
@@ -312,7 +312,7 @@ const moviesData = [
   },
   {
     id: 26,
-    date: "2024-10-13",
+    date: "2024-10-31",
     img: img3,
     title: "When Love Strikes",
     genre: "Romance",
@@ -323,7 +323,7 @@ const moviesData = [
   },
   {
     id: 27,
-    date: "2024-10-13",
+    date: "2024-10-31",
     img: img4,
     title: "When Love Strikes",
     genre: "Drama",
