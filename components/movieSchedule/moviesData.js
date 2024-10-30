@@ -269,7 +269,7 @@ const moviesData = [
   {
     id: 22,
     date: "2024-10-30",
-    img: img14,
+    img: img1,
     title: "Safe Haven",
     genre: "Thriller",
     text: "A drama series that dives into the world of a Chicago restaurant.",
