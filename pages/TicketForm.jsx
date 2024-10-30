@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-const TicketForm = () => {
+const TicketForm = ({screenState}) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -48,9 +48,6 @@ const TicketForm = () => {
   };
 
 
-  const handleBack = () => {
-    router.back();
-  };
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -81,7 +78,7 @@ const TicketForm = () => {
     <>
       <div className="px-[5%] py-8">
         <button
-          onClick={handleBack}
+          onClick={() => screenState(0)}
           className="border border-purple px-4 text-[1rem] rounded-md"
         >
           &#8592;

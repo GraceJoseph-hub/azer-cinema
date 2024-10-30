@@ -99,7 +99,7 @@ const TicketDetails = () => {
           </div>
         </div>
       )}
-      {screenState === 1 && <TicketForm onProceed={handleProceed} />}
+      {screenState === 1 && <TicketForm onProceed={handleProceed} screenState={setScreenState} />}
     </Layout>
   );
 };

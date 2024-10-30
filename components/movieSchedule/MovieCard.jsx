@@ -9,11 +9,12 @@ const MovieCard = ({ selectedDate, limit, className }) => {
   const moviesToShow = limit ? dailyMovies.slice(0, limit) : dailyMovies;
 
   return (
-    <div className={`bg-red-500 mt-14 xs:grid xs:grid-rows-2  xs:gap-8 xs:px-2 md:grid md:grid-flow-row md:grid-cols-2 md:gap-x-10 md:px-0 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:px-[10%] ${className}`}>
+    // <div className={`bg-red-500 mt-14 xs:grid xs:grid-rows-2 xs:gap-8 xs:px-2 md:grid md:grid-flow-row md:grid-cols-2 md:gap-x-10 md:px-0 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:px-[10%] ${className}`}>
+      <div className={`mt-14 mb-14 grid grid-cols-2 md:grid-cols-3 gap-4 lg:px-[45px] ${className}`}>
       {moviesToShow.length > 0 ? (
         moviesToShow.map((movie, index) => (
-          <div key={index} className="relative bg-yellow-400 w-full">
-            <div className="relative bg-blue-500 border-l rounded-md overflow-hidden ">
+          <div key={index} className="relative w-full">
+            <div className="relative border-l rounded-md overflow-hidden ">
               <Image
                 src={movie.img}
                 alt={movie.title}

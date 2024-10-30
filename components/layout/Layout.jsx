@@ -24,7 +24,7 @@ const Layout = ({ children, className }) => {
         )}
       </div>
       <main className=" h-max">{children}</main>
-      <Footer />
+        <Footer />
     </div>
   );
 };
