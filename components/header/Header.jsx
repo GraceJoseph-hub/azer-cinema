@@ -73,7 +73,7 @@ const Header = () => {
 
       {/* mobile screen */}
       {menuOpen && (
-        <nav className="absolute top-16 left-0 w-full text-purple font-bold bg-white flex flex-col items-center space-y-4 py-4 z-40">
+        <nav className="absolute top-16 left-0 w-full text-purple font-bold bg-black flex flex-col items-center space-y-4 py-4 z-40">
           {links.map((link, index) => (
             <Link
               href={link.path}
