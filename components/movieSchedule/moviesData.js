@@ -1,23 +1,18 @@
 import img1 from "../../public/img/img1.jpg";
 import img2 from "../../public/img/img2.jpg";
 import img3 from "../../public/img/img3.jpeg";
-import img4 from "../../public/img/img4.jpeg";
 import img5 from "../../public/img/img5.jpeg";
 import img6 from "../../public/img/img6.jpeg";
 import img7 from "../../public/img/img7.jpeg";
-import img8 from "../../public/img/img8.jpeg";
-import img9 from "../../public/img/img9.jpg";
 import img10 from "../../public/img/img10.jpeg";
 import img11 from "../../public/img/img11.jpeg";
 import img12 from "../../public/img/img12.jpeg";
-import img13 from "../../public/img/img13.jpg";
 import img14 from "../../public/img/img14.jpeg";
 import img15 from "../../public/img/img15.jpg";
 import img16 from "../../public/img/img16.jpeg";
 import img17 from "../../public/img/img17.jpeg";
 import img18 from "../../public/img/img18.jpeg";
 import img19 from "../../public/img/img19.jpeg";
-import img20 from "../../public/img/img20.jpg";
 import img21 from "../../public/img/img21.jpg";
 import img22 from "../../public/img/img22.jpeg";
 
@@ -70,7 +65,7 @@ const moviesData = [
   {
     id: 5,
     date: "2024-10-22",
-    img: img4,
+    img: img2,
     title: "Casino Royale",
     genre: "Action",
     text: "A drama series that dives into the world of a Chicago restaurant",
@@ -324,7 +319,7 @@ const moviesData = [
   {
     id: 27,
     date: "2024-10-31",
-    img: img4,
+    img: img2,
     title: "When Love Strikes",
     genre: "Drama",
     text: "A drama series that dives into the world of a Chicago restaurant.",
