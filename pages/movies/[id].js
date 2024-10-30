@@ -46,7 +46,7 @@ const TicketDetails = () => {
   return (
     <Layout>
       <div className="h-screen w-full bg-[url('/img/ticket2.jpg')] bg-no-repeat bg-cover bg-top">
-        <p className="absolute top-[60%] left-[10%] w-[30%] capitalize text-white text-[1.2rem]">
+        <p className="absolute top-[60%] left-[10%] w-[50%] md:w-[30%] capitalize text-white text-[1.2rem]">
           book your ticket now and dive into the cinematic experience!
         </p>
       </div>
