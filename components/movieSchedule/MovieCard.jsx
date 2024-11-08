@@ -30,13 +30,15 @@ const MovieCard = ({ selectedDate, limit, className }) => {
                 </p>
                 <div className="flex items-center justify-between gap-5 w-full">
                   <Link
-                    href="/BuyTickets"
+                    href={`/movies/${movie.id}`}
+                    // href="/BuyTickets"
                     className="border md:px-2 xs:px-1 text-[0.8rem] md:text-[1rem] xs:text-center rounded-md text-gray-300 shadow-[2px_2px_2px_#f993f9] animate__animated animate__fadeInLeft animate__slower"
                   >
                     View Details
                   </Link>
                   <Link
-                    href="/BuyTickets"
+                    href={`/movies/${movie.id}`}
+                    // href="/BuyTickets"
                     className="text-white border text-center rounded-md py-1 text-[0.8rem] md:text-[1rem] font-bold w-[100px] animate__animated animate__fadeInRight animate__slower"
                   >
                     {movie.option}

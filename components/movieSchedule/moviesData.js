@@ -19,7 +19,7 @@ import img22 from "../../public/img/img22.jpeg";
 const moviesData = [
   {
     id: 1,
-    date: "2024-10-22",
+    date: "2024-11-08",
     img: img1,
     title: "The Crow",
     text: "A drama series that dives into the world of a Chicago restaurant.",
@@ -30,7 +30,7 @@ const moviesData = [
   },
   {
     id: 2,
-    date: "2024-10-23",
+    date: "2024-11-08",
     img: img22,
     title: "The Crow",
     text: "A drama series that dives into the world of a Chicago restaurant.",
@@ -41,7 +41,7 @@ const moviesData = [
   },
   {
     id: 3,
-    date: "2024-10-24",
+    date: "2024-11-08",
     img: img2,
     title: "The Forge",
     genre: "Drama",
@@ -52,7 +52,7 @@ const moviesData = [
   },
   {
     id: 4,
-    date: "2024-10-22",
+    date: "2024-11-09",
     img: img3,
     title: "When Love Strikes",
     genre: "Romance",
@@ -64,7 +64,7 @@ const moviesData = [
 
   {
     id: 5,
-    date: "2024-10-22",
+    date: "2024-11-09",
     img: img2,
     title: "Casino Royale",
     genre: "Action",
@@ -75,7 +75,7 @@ const moviesData = [
   },
   {
     id: 6,
-    date: "2024-10-22",
+    date: "2024-11-09",
     img: img5,
     title: "Seize Your Glory",
     genre: "Drama",
@@ -86,7 +86,7 @@ const moviesData = [
   },
   {
     id: 7,
-    date: "2024-10-23",
+    date: "2024-11-10",
     img: img6,
     title: "Dirty Rotten Scoundrels",
     genre: "Comedy",
@@ -97,7 +97,7 @@ const moviesData = [
   },
   {
     id: 8,
-    date: "2024-10-24",
+    date: "2024-11-10",
     img: img7,
     title: "Little Man",
     genre: "Comedy",
@@ -108,7 +108,7 @@ const moviesData = [
   },
   {
     id: 9,
-    date: "2024-10-25",
+    date: "2024-11-10",
     img: img22,
     title: "The Watchmen",
     genre: "Romance",
@@ -119,7 +119,7 @@ const moviesData = [
   },
   {
     id: 10,
-    date: "2024-10-26",
+    date: "2024-11-11",
     img: img12,
     title: "When Love Strikes",
     genre: "Adventure",
@@ -130,7 +130,7 @@ const moviesData = [
   },
   {
     id: 11,
-    date: "2024-10-25",
+    date: "2024-11-11",
     img: img10,
     title: "Winnie The Pooh",
     genre: "Animation",
@@ -142,7 +142,7 @@ const moviesData = [
   ,
   {
     id: 41,
-    date: "2024-10-26",
+    date: "2024-11-11",
     img: img7,
     title: "Little Man",
     genre: "Comedy",
@@ -153,7 +153,7 @@ const moviesData = [
   },
   {
     id: 12,
-    date: "2024-10-25",
+    date: "2024-11-12",
     img: img11,
     title: "The Hills Run Red",
     genre: "Crime",
@@ -164,7 +164,7 @@ const moviesData = [
   },
   {
     id: 13,
-    date: "2024-10-26",
+    date: "2024-11-12",
     img: img12,
     title: "Megan Fox Subservience",
     genre: "Action",
@@ -175,7 +175,7 @@ const moviesData = [
   },
   {
     id: 14,
-    date: "2024-10-27",
+    date: "2024-11-12",
     img: img17,
     title: "Alfred Hitchcock's",
     genre: "Drama",
@@ -186,7 +186,7 @@ const moviesData = [
   },
   {
     id: 15,
-    date: "2024-10-27",
+    date: "2024-11-13",
     img: img14,
     title: "Maharaja",
     genre: "Crime",
@@ -197,7 +197,7 @@ const moviesData = [
   },
   {
     id: 16,
-    date: "2024-10-27",
+    date: "2024-11-13",
     img: img15,
     title: "Captain America",
     genre: "Action",
@@ -208,7 +208,7 @@ const moviesData = [
   },
   {
     id: 17,
-    date: "2024-10-28",
+    date: "2024-11-13",
     img: img16,
     title: "Casino Royale",
     genre: "Action",
@@ -219,7 +219,7 @@ const moviesData = [
   },
   {
     id: 18,
-    date: "2024-10-28",
+    date: "2024-11-14",
     img: img17,
     title: "Pirates of the Caribbean",
     genre: "Adventure",
@@ -230,7 +230,7 @@ const moviesData = [
   },
   {
     id: 19,
-    date: "2024-10-29",
+    date: "2024-11-14",
     img: img18,
     title: "Trap",
     genre: "Action",
@@ -241,7 +241,7 @@ const moviesData = [
   },
   {
     id: 20,
-    date: "2024-10-29",
+    date: "2024-11-14",
     img: img19,
     title: "Frozen",
     genre: "Animation",
@@ -252,7 +252,7 @@ const moviesData = [
   },
   {
     id: 21,
-    date: "2024-10-29",
+    date: "2024-11-15",
     img: img22,
     title: "90 Minutes in Heaven",
     genre: "Drama",
@@ -263,7 +263,7 @@ const moviesData = [
   },
   {
     id: 22,
-    date: "2024-10-30",
+    date: "2024-11-15",
     img: img1,
     title: "Safe Haven",
     genre: "Thriller",
@@ -274,7 +274,7 @@ const moviesData = [
   },
   {
     id: 23,
-    date: "2024-10-30",
+    date: "2024-11-15",
     img: img22,
     title: "Priest",
     genre: " Drama",
@@ -285,7 +285,7 @@ const moviesData = [
   },
   {
     id: 24,
-    date: "2024-10-30",
+    date: "2024-11-15",
     img: img1,
     title: "When Love Strikes",
     genre: "Romance",
@@ -296,7 +296,7 @@ const moviesData = [
   },
   {
     id: 25,
-    date: "2024-10-30",
+    date: "2024-11-16",
     img: img2,
     title: "When Love Strikes",
     genre: "Romance",
@@ -307,7 +307,7 @@ const moviesData = [
   },
   {
     id: 26,
-    date: "2024-10-31",
+    date: "2024-11-16",
     img: img3,
     title: "When Love Strikes",
     genre: "Romance",
@@ -318,7 +318,7 @@ const moviesData = [
   },
   {
     id: 27,
-    date: "2024-10-31",
+    date: "2024-11-16",
     img: img2,
     title: "When Love Strikes",
     genre: "Drama",
