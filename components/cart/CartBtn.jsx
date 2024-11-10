@@ -17,7 +17,7 @@ const CartBtn = () => {
     <>
       <button
         onClick={openModalHandler}
-        className="fixed top-10 right-8 bg-purple text-white font-bold px-4 py-2 rounded-full shadow-lg z-50"
+        className="fixed top-[15%] right-[7%] bg-purple text-white font-bold px-4 py-2 rounded-full shadow-lg z-50"
       >
         <FontAwesomeIcon icon={faShoppingCart} />
         <span className='mr-2 ml-2'>Your Cart</span>
