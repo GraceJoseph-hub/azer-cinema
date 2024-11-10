@@ -5,8 +5,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sunflower:wght@300;500;700&display=swap');
 
 
@@ -20,9 +18,7 @@
 
 body {
   color: #ededed;
-  /* background: #b284b2; */
   background: #000000;
-  /* font-family: 'sunflower', 'Poppins', sans-serif; */
 }
 
 main{
@@ -38,14 +34,6 @@ main{
 }
 
 
-/* .title h1{
-  font-family: 'Sunflower';
-  color: #fff;
-  font-size: 2.5rem;
-  font-weight: 700;
-  opacity: 1;
-} */
-
 .swiper-slide-active .title h1{
   opacity: 0;
   transition: 0.8s;
@@ -53,26 +41,6 @@ main{
   color: #ba10ba;
 }
 
-/* .content{
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  padding: 25px 25px 65px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  background: rgba(0, 0, 0, 0.5);
-  background-image: linear-gradient(
-    180deg,
-    transparent,
-    transparent,
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.8)
-  );
-  color: #fff;
-  opacity: 0;
-} */
 
 .swiper-slide-active .content{
   opacity: 1;
@@ -80,32 +48,15 @@ main{
   transition-delay: 1.5s;
 }
 
-/* .score{
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 45px;
-  aspect-ratio: 1/1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000;
-  background-color: #ffe550;
-  border-radius: 50%;
-  box-shadow: 0 50px 50px -20px rgba(50, 50, 93, 0.25), 0 30px 60px, -30px rgba(0, 0, 0, 0.3), inset 0 -2px 6px 0 rgba(10, 37, 64, 0.35);
-} */
-
 
 .swiper-slide-active .score{
   opacity: 1;
   transition: 0.8s;
   transition-delay: 0.9s;
-  /* background-color: transparent; */
 }
 
 .text{
   border-left: 4px solid #ba10ba;
-  /* border-left: 4px solid #f993f9; */
   padding-left: 10px;
   opacity: 0;
 }

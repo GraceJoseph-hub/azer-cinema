@@ -11,8 +11,8 @@ const ProductCard = ({ product }) => {
 
 
    const handleAddToCart = () => {
-     addToCart(product, quantity); // Add quantity to cart
-     setQuantity(0); // Reset quantity
+     addToCart(product, quantity); 
+     setQuantity(0); 
   };
   
   return (
