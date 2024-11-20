@@ -6,11 +6,11 @@ import ProductCard from "@/components/products/ProductCard";
 const FoodDrinks = () => {
   return (
     <Layout>
-      <div className="relative h-[40vh] md:h-[60vh] w-full bg-[url('/img/bg6.jpg')] bg-fixed bg-cover bg-center">
+      <div className="relative h-[60vh] w-full bg-[url('/img/bg6.jpg')] bg-fixed bg-cover bg-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
-          className="absolute bottom-0 left-0 bg-black"
+          className="absolute bottom-0 left-0"
         >
           <path
             fill="#000000"
