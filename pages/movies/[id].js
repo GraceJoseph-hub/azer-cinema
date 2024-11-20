@@ -60,7 +60,7 @@ const TicketDetails = () => {
           </button>
           <div className="flex flex-col md:flex-row md:items-center gap-8 bg-gray-900 rounded-lg">
             <div className="pl-3 pt-3 md:pb-3">
-              <Image src={movie.img} alt={movie.title} className="rounded-lg" />
+              <Image src={movie.img} alt={movie.title} className="rounded-lg h-[500px] w-auto" />
             </div>
             <div className="px-3 pb-3">
               <h2 className="text-[1rem] md:text-[2rem]">
